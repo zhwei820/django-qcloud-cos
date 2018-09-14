@@ -11,6 +11,8 @@ class CosObject(object):
     def __init__(self, option=None):
         if not option:
             self.option = settings.QCLOUD_STORAGE_OPTION
+        else:
+            self.option = option
 
     def get_object(self, name, is_private=False):
         method = 'get'

@@ -1,7 +1,7 @@
 import requests
 from qcloudcos.cos_auth import Auth
 from django.conf import settings
-from utils import get_logger
+from .utils import get_logger
 
 
 LOGGER = get_logger('Tencent Cos')

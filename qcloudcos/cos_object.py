@@ -24,7 +24,7 @@ class CosObject(object):
         if name[0] != '/':
             name = '/' + name
         objectName = name
-        url = "http://%s-%s.%s.myqcloud.com%s" % (bucket, appid, region, objectName)
+        url = "http://%s-%s.cos.%s.myqcloud.com%s" % (bucket, appid, region, objectName)
         s = requests.Session()
         if is_private:
             auth = Auth(appid, SecretID, SecretKey, bucket, region, method, objectName)
